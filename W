@@ -1,0 +1,41 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local main = Instance.new("Frame")
+local Sumbit = Instance.new("TextButton")
+local Input = Instance.new("TextBox")
+
+--Properties:
+
+main.Name = "main"
+main.Parent = game.StarterGui.Whitelist
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0.442518234, 0, 0.349636972, 0)
+main.Size = UDim2.new(0, 246, 0, 149)
+
+Sumbit.Name = "Sumbit"
+Sumbit.Parent = main
+Sumbit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sumbit.Position = UDim2.new(0, 0, 0.503355682, 0)
+Sumbit.Size = UDim2.new(0, 246, 0, 74)
+Sumbit.Font = Enum.Font.SourceSans
+Sumbit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sumbit.TextSize = 14.000
+Sumbit.MouseButton1Down:connect(function()
+	if Input.Text == "daWmimic" then
+		main.Visible = false
+		
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/lolz123313123/damimi31/main/new"), true))()
+	end
+end)
+
+Input.Name = "Input"
+Input.Parent = main
+Input.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Input.Size = UDim2.new(0, 246, 0, 75)
+Input.Font = Enum.Font.SourceSans
+Input.Text = "Required Key"
+Input.TextColor3 = Color3.fromRGB(0, 0, 0)
+Input.TextSize = 14.000
